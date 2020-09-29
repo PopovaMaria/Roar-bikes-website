@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Roar Cycle - Contact Us Details Phone Number</title>
+    <meta content="Contact Details for Roar - 57 Moyglare Abbey, Dublin, w23c1k2. Phone +353 5465481"
+          name="description">
+    <!--    This is Eric Meyers CSS reset-->
+    <link href="../css/css-reset.css " rel="stylesheet">
+    <!--    This is my own style sheet-->
+    <link href="../css/style.css " rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap"
+          rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/8e43f6f6a8.js"></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img alt="Logo For Bike Repair shop Roar Bikes"
+                                         src="../images/logo-roar-bikes.svg">
+            </a>
+        </div>
+
+        <nav>
+            <div class="navbutton">
+                <a href="#">Book Online</a>
+                <div class="dropdown">
+                    <div class="navbutton">
+                        <a href="#">Onsite Service</a>
+                    </div>
+                    <div class="navbutton">
+                        <a href="#">Parts Delivery</a>
+                    </div>
+                    <div class="navbutton">
+                        <a href="#">Request Callback</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbutton">
+                <a href="#">About</a>
+            </div>
+            <div class="navbutton">
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main2">
+        <h1>Contact Us</h1>
+        <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you
+            within a matter of hours to help you. </p>
+        <form action="mail.php" method="post">
+
+            <div class="inputwrapper">
+                <label class="newline" for="name">First Name</label>
+                <input id="name" name="name" placeholder="First Name" type="text">
+            </div>
+
+            <div class="inputwrapper">
+                <label class="newline" for="email">Email</label>
+                <input id="email" name="email" placeholder="Email" type="email">
+            </div>
+
+            <div class="inputwrapper">
+                <textarea cols="100" id="message" name="message" placeholder="Let us know what you think"
+                          rows="5"></textarea>
+            </div>
+
+            <div class="inputwrapper">
+                <input checked id="email-sub" name="email-sub" type="checkbox" value="yes-sign-me-up">
+                <label for="email-sub">Sign up for Email Newsletter</label>
+
+            </div>
+
+            <div class="inputwrapper">
+                <p>How would you like to be contacted?</p>
+                <input id="phone" name="contact-preference" type="radio" value="phone">
+                <label class="margin-right-a" for="phone">Phone</label>
+                <input id="email2" name="contact-preference" type="radio" value="email">
+                <label for="email">Email</label>
+            </div>
+
+            <div class="inputwrapper">
+                <select id="county" name="county">
+                    <option value="Not-Chosen">Choose County</option>
+                    <option value="Limeric">Limeric</option>
+                    <option value="Galway">Galway</option>
+                    <option value="Dublin">Dublin</option>
+                </select>
+            </div>
+            <input type="submit" value="Fire Away">
+        </form>
+    </div>
+</body>
+</html>
